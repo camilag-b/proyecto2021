@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web de materia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <div class="container">
+
+                <nav class="navbar navbar-expand-lg sticky-top">
+
+                    <!-- <div class="container"> -->
+                      <a class="navbar-brand" href="#">
+                        <h1 class="text-uppercase">
+                            ALPI
+                        </h1>
+                      </a>
+
+                      <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav nav-fill ">
+                          <li class="nav-item text-white">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#calendario">Calendario</a>
+                          </li>
+                          
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Clases
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                              <li><a class="dropdown-item" href="clases.html">Clase 1</a></li>
+                              <li><a class="dropdown-item" href="clases.html">Clase 2</a></li>
+                              <li><a class="dropdown-item" href="clases.html">Clase 3</a></li>
+                            </ul>
+                          </li>
+                         
+                          <li class="nav-item">
+                            <a class="nav-link active" href="recursosextra.html">Recursos extra</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#planteldocente">Conocé a la catédra</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" href="#contacto">¡Contactanos!</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            
+        </div>
+    </header>
+
+    <!---------------------------Sección de novedades--------------------------->
+
+    <div class="slider container-fluid mb-3 px-0">
+        
+        <!-- Carousel o Slider de imagenes -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Menu de Indicadores (inferior centrado) -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="¡Novedades!"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Clase X"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Extra X"></button>
+            </div>
+
+            <!-- Contenido del Carousel -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imagenes/novedades.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                      <a href="clases.html" target="self">
+                    <img src="imagenes/claseheader.png" class="d-block w-100" alt="..."></a>
+                  </div>
+                  <div class="carousel-item">
+                      <a href="recursosextra.html" target="self">
+                    <img src="imagenes/extraheader.png" class="d-block w-100" alt="..."></a>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+              </div>
+              <br>
+              <br>
+              <br>
+            <!---------------------------Calendario-------------------------->
+           
+            
+            <section class="container-fluid" id="calendario">
+            <h3 class="text-dark text-center">
+                Calendario de cursada
+            </h3>
+            <h4 class="text-center">
+                <small class="muted">¡Podés hacer click en Add Calendar y agregar este calendario a tu cuenta!
+               </small>
+            </h4>
+            <br>
+            <div class="d-flex justify-content-center">
+            <div class="embed-responsive">
+                <iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=2&amp;bgcolor=%23E4C441&amp;ctz=America%2FArgentina%2FBuenos_Aires&amp;src=ZzQ4MDB1OHNwN2ZkMTJ2MGM1cGlrcTZ0MGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D50000&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTabs=0" style="border-width:0" width="300" height="400" frameborder="0" scrolling="no"></iframe>
+            </div>
+            </div>
+            </section>
+            <br>
+            <br>
+            <!---------------Sección con información sobre la cátedra------------------>
+            <br>
+            <br>
+            <section class="container-fluid" id="planteldocente">
+
+            
+            <h3 class="text-dark text-center ">
+                Conocé la catédra
+            </h3>
+            <br>
+            <h4>
+                Nombre de la materia
+            </h4>
+            <p>descripcion de la materia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptates nulla sed nihil dolores repudiandae et vel placeat consequatur debitis, itaque ipsa, veritatis, quidem voluptate earum enim voluptas saepe doloremque.</p>
+            
+        <br>
+        <br>
+        <h4>Docentes</h4>
+        <br>
+            <div class="row row-cols-2">
+            <div class="container d-flex">
+            
+            <h5>
+            NOMBRE Y APELLIDO 1
+            </h5>
+            <img src="imagenes/silueta.png" class="img-fluid" alt="" width="10%">   
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptatum voluptas nemo aspernatur vel maxime excepturi, odio cumque eligendi dolorum sunt quo rem placeat nulla odit ab adipisci ea tempore?</p>
+        <br>
+            <p>Contacto:</p>
+            
+        </div>
+            
+            <div class="container d-flex">
+                <h5>
+                NOMBRE Y APELLIDO 2
+                </h5>
+                <img src="imagenes/silueta.png"  class="img-fluid" alt="" width="10%">   
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptatum voluptas nemo aspernatur vel maxime excepturi, odio cumque eligendi dolorum sunt quo rem placeat nulla odit ab adipisci ea tempore?</p>
+                <br> <p>Contacto:</p>
+                
+                </div>
+                <div class="container d-flex">
+            <h5>
+            NOMBRE Y APELLIDO 3
+            </h5>
+            <img src="imagenes/silueta.png" class="img-fluid" alt="" width="10%">    
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptatum voluptas nemo aspernatur vel maxime excepturi, odio cumque eligendi dolorum sunt quo rem placeat nulla odit ab adipisci ea tempore?</p>
+            <br> <p>Contacto:</p>
+            </div>
+
+            <div class="container d-flex">
+                <h5>
+                NOMBRE Y APELLIDO 4
+                </h5>
+                <img src="imagenes/silueta.png" class="img-fluid" alt="" width="10%">    
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non voluptatum voluptas nemo aspernatur vel maxime excepturi, odio cumque eligendi dolorum sunt quo rem placeat nulla odit ab adipisci ea tempore?</p>
+                <br><p>Contacto:</p>
+                </div>
+            </div>
+            </section>
+
+            <!---Contacto-->
+            <section class="container-fluid" id="contacto">
+            <br>
+            <br>
+            <br>
+            <form class="container-fluid text-center ">
+                <h3>¡Contactanos!</h3>
+                <br>
+                <div class="input-group">
+                    <span class="input-group-text">Nombre y apellido</span>
+                    <input type="text" required placeholder="" aria-label="First name" class="form-control">
+                    <input type="text" required placeholder="" aria-label="Last name" class="form-control">
+                  </div>
+                  <br>
+                <div class="input-group">
+                    <span class="input-group-text">Dirección de E-mail</span>
+                  <input type="email" required placeholder="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <br>
+                <div class="input-group">
+                    <span class="input-group-text">Escribi tu consulta</span>
+                    <textarea required placeholder="" class="form-control" aria-label="With textarea"></textarea>
+                  </div>
+                  <br>
+                <button type="submit" class="btn btn-primary bg-dark">Enviar</button>
+              </form>
+              <br>
+              <br>
+              <br>
+                </div>
+            </section>
+            <!----------Footer------------>
+
+            <footer class="container-fluid bg-dark text-white p-3 text-center bottom-0">
+                <div class="container">
+                    <p class="fw-lighter mb-0">&copy; 2021 - Derechos Reservados</p>
+                    <p class="fw-lighter mt-0">Desarrollado por <a href="">CGB</a></p>
+                </div>
+            </footer>
+            <!---¡Felicidades! Ha encontrado el mensaje oculto. Pd: apruebeme :) -->
+
+    <!---JavaScript-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
