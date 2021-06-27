@@ -1,0 +1,61 @@
+html{
+    padding:0%;
+    margin: 0%;
+    background: #facc29;
+}
+
+p{
+    text-align: justify;
+    padding: 4%;
+}
+
+
+.container{
+    max-width:max-content
+
+}
+body{
+    background:#facc29;
+    padding: 0%;
+}
+header{
+    background:#1f201f;
+    
+}
+
+header ul li{
+    color: white !important;
+}
+
+.navbar{
+    background: #1f201f;
+    max-width: 100%;
+}
+.nav-item{
+    color: white
+}
+iframe{
+    background: #facc29;
+    justify-content: center;
+}
+
+form{
+    max-width: 40%;
+}
+button{
+    color: white;
+    
+}
+.img-fluid{
+    padding: 4%;
+
+}
+
+.bloquegeneral{
+    padding: 4%;
+}
+
+.etiquetaform{
+    padding: 4%;
+    font: bold;
+}
