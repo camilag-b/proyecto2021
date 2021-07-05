@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web de materia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <div id="inicio"></div>
+ 
+  <header class="container-fluid header sticky-top">
+    <div class="container">
+
+            <nav class="navbar navbar-expand-lg navbar-dark"> 
+                <a class="navbar-brand" href="index.html">
+                    <h1 class="text-uppercase text-white">
+                        ALPI
+                    </h1>
+                  </a>
+                
+                  <!---boton para celulares-->>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menunavegacion" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                    <!----fin boton-->
+
+                  <div class="collapse navbar-collapse" id="menunavegacion">
+                    <ul class="navbar-nav">
+                      <li class="nav-item ">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active text-white" href="index.html#calendario">Calendario</a>
+                      </li>
+                      
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Clases
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-white" aria-labelledby="navbarDarkDropdownMenuLink">
+                          <li><a class="dropdown-item" href="clases.html">Clase 1</a></li>
+                          <li><a class="dropdown-item" href="clases.html">Clase 2</a></li>
+                          <li><a class="dropdown-item" href="clases.html">Clase 3</a></li>
+                        </ul>
+                      </li>
+                     
+                      <li class="nav-item">
+                        <a class="nav-link active text-white" href="recursosextra.html">Recursos extra</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active text-white" href="index.html#planteldocente">Conocé a la catédra</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active text-white" href="index.html#contacto">¡Contactanos!</a>
+                      </li>
+                    </ul>
+                  </div>
+            
+              </nav>
+        
+    </div>
+</header>
+
+    <!---------------------------Sección de novedades--------------------------->
+
+    <div class="slider container-fluid mb-3 px-0">
+        
+        <!-- Carousel o Slider de imagenes -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Menu de Indicadores (inferior centrado) -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="¡Novedades!"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Clase X"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Extra X"></button>
+            </div>
+
+            <!-- Contenido del Carousel -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imagenes/novedades.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                      <a href="clases.html" target="self">
+                    <img src="imagenes/claseheader.png" class="d-block w-100" alt="..."></a>
+                  </div>
+                  <div class="carousel-item">
+                      <a href="recursosextra.html" target="self">
+                    <img src="imagenes/extraheader.png" class="d-block w-100" alt="..."></a>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+              </div>
+              <br>
+            <!---------------------------Calendario-------------------------->
+           
+
+            <section class="container" id="bloquegeneral">
+            <section class="container-fluid" id="calendario">
+          <hr>
+            <h3 class=" btn-dark text-light text-center p-3">
+                Calendario de cursada
+            </h3>
+            <h4 class="text-center">
+                <small class="muted">¡Podés hacer click en Add Calendar y agregar este calendario a tu cuenta!
+               </small>
+            </h4>
+            <br>
+            <div class="d-flex justify-content-center">
+            <div class="embed-responsive">
+                <iframe src="https://calendar.google.com/calendar/embed?height=400&amp;wkst=2&amp;bgcolor=%23E4C441&amp;ctz=America%2FArgentina%2FBuenos_Aires&amp;src=ZzQ4MDB1OHNwN2ZkMTJ2MGM1cGlrcTZ0MGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D50000&amp;showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTabs=0" style="border-width:0" width="300" height="400" frameborder="0" scrolling="no"></iframe>
+            </div>
+            </div>
+            </section>
+
+          </div>
+            
+            <!---------------Sección con información sobre la cátedra------------------>
+           
+            <br>
+            <section class="container" id="planteldocente">
+
+            <hr>
+            <h3 class="btn-dark text-light text-center p-3">
+                Conocé la catédra
+            </h3>
+            <br>
+            <h4 class="text-center text-light">
+                Nombre de la materia
+            </h4>
+            <p class="text-justify">descripcion de la materia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam voluptates nulla sed nihil dolores repudiandae et vel placeat consequatur debitis, itaque ipsa, veritatis, quidem voluptate earum enim voluptas saepe doloremque.</p>
+
+  
+        <h4 class="text-center text-light">Docentes</h4>
+        <br>
+        <div class="container" id="docentesscreen">
+            <div class="row row-cols-2 text-center">
+
+              <div class="col" >
+                  <img src="imagenes/silueta.png" class=img-fluid alt="">
+                  <h5 class="text-center"> NOMBRE APELLIDO</h5>
+                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto earum, modi dolore iste magni a veniam repellendus aperiam culpa dolorum placeat sunt consequatur reprehenderit vitae, ipsam iure voluptatem maxime. Dolor? Lorem ipsum dolor sit amet, consectetur adipisicing elit. In repudiandae ipsa impedit eligendi assumenda, eius dolor molestias neque iste, saepe ratione quidem id aliquam dolores quod. Amet quis nemo aliquid? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sunt aspernatur quidem reprehenderit magnam neque, placeat quos a eius sequi asperiores nisi iure repellendus rerum sapiente? Recusandae ullam aliquam voluptates.
+                  </p>
+              </div>
+              <div class="col ">
+                <img src="imagenes/silueta.png" class=img-fluid alt="">
+                <h5 class="text-center"> NOMBRE APELLIDO</h5>
+                <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto earum, modi dolore iste magni a veniam repellendus aperiam culpa dolorum placeat sunt consequatur reprehenderit vitae, ipsam iure voluptatem maxime. Dolor? Lorem ipsum dolor sit amet, consectetur adipisicing elit. In repudiandae ipsa impedit eligendi assumenda, eius dolor molestias neque iste, saepe ratione quidem id aliquam dolores quod. Amet quis nemo aliquid? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sunt aspernatur quidem reprehenderit magnam neque, placeat quos a eius sequi asperiores nisi iure repellendus rerum sapiente? Recusandae ullam aliquam voluptates.
+                </p>
+            </div>
+            <div class="col">
+              <img src="imagenes/silueta.png" class=img-fluid alt="">
+              <h5 class="text-center"> NOMBRE APELLIDO</h5>
+              <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto earum, modi dolore iste magni a veniam repellendus aperiam culpa dolorum placeat sunt consequatur reprehenderit vitae, ipsam iure voluptatem maxime. Dolor? Lorem ipsum dolor sit amet, consectetur adipisicing elit. In repudiandae ipsa impedit eligendi assumenda, eius dolor molestias neque iste, saepe ratione quidem id aliquam dolores quod. Amet quis nemo aliquid? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sunt aspernatur quidem reprehenderit magnam neque, placeat quos a eius sequi asperiores nisi iure repellendus rerum sapiente? Recusandae ullam aliquam voluptates.
+              </p>
+          </div>
+          <div class="col">
+            <img src="imagenes/silueta.png" class=img-fluid alt="">
+            <h5 class="text-center"> NOMBRE APELLIDO</h5>
+            <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto earum, modi dolore iste magni a veniam repellendus aperiam culpa dolorum placeat sunt consequatur reprehenderit vitae, ipsam iure voluptatem maxime. Dolor? Lorem ipsum dolor sit amet, consectetur adipisicing elit. In repudiandae ipsa impedit eligendi assumenda, eius dolor molestias neque iste, saepe ratione quidem id aliquam dolores quod. Amet quis nemo aliquid? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sunt aspernatur quidem reprehenderit magnam neque, placeat quos a eius sequi asperiores nisi iure repellendus rerum sapiente? Recusandae ullam aliquam voluptates.
+            </p>
+          </div>
+          
+        </div>
+        </div>
+
+
+        <div class="container" id="docentesmobile">
+          <div class="col text-center" >
+
+
+            <div class="col" >
+                <img src="imagenes/silueta.png" class=img-fluid alt="">
+                <h5 class="text-center"> NOMBRE APELLIDO</h5>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto earum, modi dolore iste magni a veniam repellendus aperiam culpa dolorum placeat sunt consequatur reprehenderit vitae, ipsam iure voluptatem maxime. Dolor? Lorem ipsum dolor sit amet, consectetur adipisicing elit. In repudiandae ipsa impedit eligendi assumenda, eius dolor molestias neque iste, saepe ratione quidem id aliquam dolores quod. Amet quis nemo aliquid? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sunt aspernatur quidem reprehenderit magnam neque, placeat quos a eius sequi asperiores nisi iure repellendus rerum sapiente? Recusandae ullam aliquam voluptates.
+                </p>
+            </div>
+            <div class="col ">
+              <img src="imagenes/silueta.png" class=img-fluid alt="">
+              <h5 class="text-center"> NOMBRE APELLIDO</h5>
+              <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto earum, modi dolore iste magni a veniam repellendus aperiam culpa dolorum placeat sunt consequatur reprehenderit vitae, ipsam iure voluptatem maxime. Dolor? Lorem ipsum dolor sit amet, consectetur adipisicing elit. In repudiandae ipsa impedit eligendi assumenda, eius dolor molestias neque iste, saepe ratione quidem id aliquam dolores quod. Amet quis nemo aliquid? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sunt aspernatur quidem reprehenderit magnam neque, placeat quos a eius sequi asperiores nisi iure repellendus rerum sapiente? Recusandae ullam aliquam voluptates.
+              </p>
+          </div>
+          <div class="col">
+            <img src="imagenes/silueta.png" class=img-fluid alt="">
+            <h5 class="text-center"> NOMBRE APELLIDO</h5>
+            <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto earum, modi dolore iste magni a veniam repellendus aperiam culpa dolorum placeat sunt consequatur reprehenderit vitae, ipsam iure voluptatem maxime. Dolor? Lorem ipsum dolor sit amet, consectetur adipisicing elit. In repudiandae ipsa impedit eligendi assumenda, eius dolor molestias neque iste, saepe ratione quidem id aliquam dolores quod. Amet quis nemo aliquid? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sunt aspernatur quidem reprehenderit magnam neque, placeat quos a eius sequi asperiores nisi iure repellendus rerum sapiente? Recusandae ullam aliquam voluptates.
+            </p>
+        </div>
+        <div class="col">
+          <img src="imagenes/silueta.png" class=img-fluid alt="">
+          <h5 class="text-center"> NOMBRE APELLIDO</h5>
+          <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto earum, modi dolore iste magni a veniam repellendus aperiam culpa dolorum placeat sunt consequatur reprehenderit vitae, ipsam iure voluptatem maxime. Dolor? Lorem ipsum dolor sit amet, consectetur adipisicing elit. In repudiandae ipsa impedit eligendi assumenda, eius dolor molestias neque iste, saepe ratione quidem id aliquam dolores quod. Amet quis nemo aliquid? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor sunt aspernatur quidem reprehenderit magnam neque, placeat quos a eius sequi asperiores nisi iure repellendus rerum sapiente? Recusandae ullam aliquam voluptates.
+          </p>
+        </div>
+
+
+      </div>
+      </div>
+
+          </section>
+
+
+          <!---boton volver arriba-->
+          <div class="botonvolver">
+            <button type="button" class="btn">
+            <a href="index.html#inicio"> <img src="imagenes/boton.png" class="img-fluid"  alt=""></a> 
+          </button>
+          </div>
+          
+            <!---Contacto-->
+            <section class="container" id="contacto">
+            
+            <hr>
+            <h3 class="btn-dark text-light text-center p-3">¡Contactanos!</h3>
+            <br>
+
+            <form class="container text-center">
+            <div>
+              <span>Nombre</span> <br>
+              <input type="text" name="nombre" required>
+            </div>
+            <div>
+              <span>Apellido</span> <br>
+              <input type="text" name="apellido" required>
+            </div>
+            <div>
+              <label>
+                  <span>E-mail</span> <br>
+                  <input type="email" name="email" required>
+              </label>
+            </div>
+
+            <div>
+              <span>Tipo de consulta</span> <br>
+             <select name="tipodeconsulta">
+                 <option value="">Seleccione...</option>
+                  <option value="01">Bibliografia</option>
+                  <option value="02">Exámen</option>
+                  <option value="03">Clases</option>
+                  <option value="04">Sugerencia</option>
+                  <option value="05">Otros</option>
+              </select>
+            </div>
+               
+            <div>
+            <label>
+                <span>Mensaje</span> <br>
+                <textarea name="mensaje" required placeholder="Escribí aca tu mensaje" ></textarea>
+            </label>
+            </div>
+            <button type="submit" class="btn btn-dark">Enviar</button>
+          
+        </form>
+
+        <br><br>
+
+
+            </section>
+
+          </section>
+
+
+            <!----------Footer------------>
+
+            <footer class="container-fluid bg-dark text-white p-1 text-center bottom-0">
+                
+                    <p class="fw-lighter mb-0 text-center">&copy;2021 - Derechos Reservados<br>Desarrollado por <a href="mailto:camilagbaello@gmail.com?Subject= Tengo una consulta - ALPI 2021">CGB</a></p>
+               
+            </footer>
+         
+
+    <!---JavaScript-->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
